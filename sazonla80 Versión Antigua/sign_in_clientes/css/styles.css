@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.logo{
+  margin-left: 10%;
+  width: 40%;
+  height: 80%;
+}
+
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../img/Almuerzo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.haycuenta {
+  color: white
+}
+
+.haycuenta .sesion {
+  color: #c45f37;
+}
+
+  .form-register {
+    width: 400px;
+    background: #000000;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 4px;
+    font-family: 'helvetica';
+    color: #c45f37;
+    box-shadow: 7px 13px 37px #f0f0f0;
+  }
+  
+  .form-register h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .field {
+    width: 100%;
+    background: #181818;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #c45f37;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #c45f37;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 130px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.side {
+    width: 100px;
+
+}
+
+button {
+    display: flex;
+    text-align: center;
+}
+
+button img{
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar-content {
+    padding: 20px;
+    color: white;
+}
+
+#toggleBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #33333300;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleBtn.active {
+    left: 300px;
+}
+
+.sidebar h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar.active {
+    width: 300px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 30px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+    font-size: 35px;
+}
+
+
+.user-menu {
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown img {
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* .user-profile {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+} */
+
+/* .user-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu:hover .user-options {
+    display: block;
+} */
+
+/* .user-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-options li {
+    padding: 10px;
+    text-align: right;
+}
+
+.user-options a {
+    text-decoration: none;
+    color: #333;
+} */
+
+/* .user-options a:hover {
+    text-decoration: underline;
+} */
+
+/* #sazon{
+    margin-right: 20px;
+} */
+
+
+
+/* .sidebar {
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    padding-top: 60px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+} */
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.users-table--edit{
+    background: #b11e1e;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pedido-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pedido-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.comida {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comida img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.opciones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #b11e1e;
+    text-decoration: none;
+}
+
+
+.col-md-3{
+    margin-right: 10px;
+}
+.logo_resta{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #toggleBtn.active {
+        left: 180px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 120px;
+    }
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+
+    .pedido-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    .pedido-card h2, h3 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        margin-left: 10px;
+        border-radius: 4px;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: #b11e1e;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-top: 80px;
+        margin-left: -50px;
+        font-size: 25px;
+    }
+    
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    #toggleBtn.active {
+        left: 300px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        width: 430px; 
+    }
+
+    .sidebar h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    
+    .sidebar ul li {
+        padding: 60px;
+        text-align: center;
+    }
+    
+    .sidebar ul li a {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 40px;
+        font-size: 40px;
+    }
+}
